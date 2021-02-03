@@ -1,0 +1,1593 @@
+{
+  "lights": {
+    "2": {
+      "state": {
+        "on": true,
+        "bri": 50,
+        "hue": 30000,
+        "sat": 50,
+        "effect": "none",
+        "xy": [
+          0.3383,
+          0.4141
+        ],
+        "ct": 189,
+        "alert": "select",
+        "colormode": "hs",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2020-03-07T13:45:41"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 2",
+      "modelid": "LCT010",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 1000,
+          "maxlumen": 806,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [
+              0.6915,
+              0.3083
+            ],
+            [
+              0.1700,
+              0.7000
+            ],
+            [
+              0.1532,
+              0.0475
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": true
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:02:7d:e0:9c-0b",
+      "swversion": "1.50.2_r30933",
+      "swconfigid": "292E579A",
+      "productid": "Philips-LCT010-1-A19ECLv4"
+    },
+    "3": {
+      "state": {
+        "on": true,
+        "bri": 50,
+        "hue": 30000,
+        "sat": 50,
+        "effect": "none",
+        "xy": [
+          0.3383,
+          0.4141
+        ],
+        "ct": 189,
+        "alert": "select",
+        "colormode": "hs",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2020-03-07T13:46:05"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 3",
+      "modelid": "LCT015",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 1000,
+          "maxlumen": 806,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [
+              0.6915,
+              0.3083
+            ],
+            [
+              0.1700,
+              0.7000
+            ],
+            [
+              0.1532,
+              0.0475
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": true
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:03:54:32:3e-0b",
+      "swversion": "1.50.2_r30933",
+      "swconfigid": "772B0E5E",
+      "productid": "Philips-LCT015-1-A19ECLv5"
+    },
+    "4": {
+      "state": {
+        "on": true,
+        "bri": 50,
+        "hue": 30000,
+        "sat": 50,
+        "effect": "none",
+        "xy": [
+          0.3383,
+          0.4141
+        ],
+        "ct": 189,
+        "alert": "select",
+        "colormode": "hs",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2020-03-07T13:46:10"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 4",
+      "modelid": "LCT015",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 1000,
+          "maxlumen": 806,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [
+              0.6915,
+              0.3083
+            ],
+            [
+              0.1700,
+              0.7000
+            ],
+            [
+              0.1532,
+              0.0475
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": true
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:03:71:48:8c-0b",
+      "swversion": "1.50.2_r30933",
+      "swconfigid": "772B0E5E",
+      "productid": "Philips-LCT015-1-A19ECLv5"
+    },
+    "5": {
+      "state": {
+        "on": true,
+        "bri": 50,
+        "hue": 30000,
+        "sat": 50,
+        "effect": "none",
+        "xy": [
+          0.3383,
+          0.4141
+        ],
+        "ct": 189,
+        "alert": "select",
+        "colormode": "hs",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2020-03-07T13:46:14"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 5",
+      "modelid": "LCT015",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 1000,
+          "maxlumen": 806,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [
+              0.6915,
+              0.3083
+            ],
+            [
+              0.1700,
+              0.7000
+            ],
+            [
+              0.1532,
+              0.0475
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": true
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:03:71:48:68-0b",
+      "swversion": "1.50.2_r30933",
+      "swconfigid": "772B0E5E",
+      "productid": "Philips-LCT015-1-A19ECLv5"
+    },
+    "6": {
+      "state": {
+        "on": true,
+        "bri": 50,
+        "hue": 30000,
+        "sat": 50,
+        "effect": "none",
+        "xy": [
+          0.3383,
+          0.4141
+        ],
+        "ct": 189,
+        "alert": "select",
+        "colormode": "hs",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2020-03-07T13:45:59"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 6",
+      "modelid": "LCT015",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 1000,
+          "maxlumen": 806,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [
+              0.6915,
+              0.3083
+            ],
+            [
+              0.1700,
+              0.7000
+            ],
+            [
+              0.1532,
+              0.0475
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": true
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:03:54:62:76-0b",
+      "swversion": "1.50.2_r30933",
+      "swconfigid": "772B0E5E",
+      "productid": "Philips-LCT015-1-A19ECLv5"
+    },
+    "7": {
+      "state": {
+        "on": true,
+        "bri": 170,
+        "hue": 54222,
+        "sat": 254,
+        "effect": "none",
+        "xy": [
+          0.4039,
+          0.3447
+        ],
+        "ct": 222,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": false
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2020-03-07T13:46:32"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 7",
+      "modelid": "LCT001",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 600,
+          "colorgamuttype": "B",
+          "colorgamut": [
+            [
+              0.6750,
+              0.3220
+            ],
+            [
+              0.4090,
+              0.5180
+            ],
+            [
+              0.1670,
+              0.0400
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:00:f9:de:7e-0b",
+      "swversion": "5.127.1.26581"
+    },
+    "8": {
+      "state": {
+        "on": true,
+        "bri": 50,
+        "hue": 30000,
+        "sat": 50,
+        "effect": "none",
+        "xy": [
+          0.3383,
+          0.4141
+        ],
+        "ct": 189,
+        "alert": "select",
+        "colormode": "hs",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2020-03-07T13:46:47"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 8",
+      "modelid": "LCT015",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 1000,
+          "maxlumen": 806,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [
+              0.6915,
+              0.3083
+            ],
+            [
+              0.1700,
+              0.7000
+            ],
+            [
+              0.1532,
+              0.0475
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": true
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:03:60:02:72-0b",
+      "swversion": "1.50.2_r30933",
+      "swconfigid": "772B0E5E",
+      "productid": "Philips-LCT015-1-A19ECLv5"
+    },
+    "9": {
+      "state": {
+        "on": true,
+        "bri": 50,
+        "hue": 30000,
+        "sat": 50,
+        "effect": "none",
+        "xy": [
+          0.3383,
+          0.4141
+        ],
+        "ct": 189,
+        "alert": "select",
+        "colormode": "hs",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2020-03-07T13:45:45"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 9",
+      "modelid": "LCT015",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 1000,
+          "maxlumen": 806,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [
+              0.6915,
+              0.3083
+            ],
+            [
+              0.1700,
+              0.7000
+            ],
+            [
+              0.1532,
+              0.0475
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": true
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:03:54:32:39-0b",
+      "swversion": "1.50.2_r30933",
+      "swconfigid": "772B0E5E",
+      "productid": "Philips-LCT015-1-A19ECLv5"
+    },
+    "10": {
+      "state": {
+        "on": true,
+        "bri": 170,
+        "hue": 54222,
+        "sat": 254,
+        "effect": "none",
+        "xy": [
+          0.4039,
+          0.3447
+        ],
+        "ct": 222,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": false
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2020-03-07T13:46:27"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 10",
+      "modelid": "LCT001",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 600,
+          "colorgamuttype": "B",
+          "colorgamut": [
+            [
+              0.6750,
+              0.3220
+            ],
+            [
+              0.4090,
+              0.5180
+            ],
+            [
+              0.1670,
+              0.0400
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:00:fc:98:e3-0b",
+      "swversion": "5.127.1.26581"
+    },
+    "11": {
+      "state": {
+        "on": true,
+        "bri": 170,
+        "hue": 54222,
+        "sat": 254,
+        "effect": "colorloop",
+        "xy": [
+          0.3667,
+          0.3642
+        ],
+        "ct": 443,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": false
+      },
+      "swupdate": {
+        "state": "transferring",
+        "lastinstall": "2019-03-27T20:10:04"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 11",
+      "modelid": "LCT001",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 600,
+          "colorgamuttype": "other",
+          "colorgamut": [
+            [
+              0.0000,
+              0.0000
+            ],
+            [
+              0.0000,
+              0.0000
+            ],
+            [
+              0.0000,
+              0.0000
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:00:f8:d7:bb-0b",
+      "swversion": "5.23.1.13452"
+    },
+    "12": {
+      "state": {
+        "on": true,
+        "bri": 170,
+        "hue": 54222,
+        "sat": 254,
+        "effect": "none",
+        "xy": [
+          0.4039,
+          0.3447
+        ],
+        "ct": 419,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": false
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2020-03-07T13:45:38"
+      },
+      "type": "Extended color light",
+      "name": "Hue lightstrip plus 1",
+      "modelid": "LST002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue lightstrip plus",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 40,
+          "maxlumen": 1600,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [
+              0.6915,
+              0.3083
+            ],
+            [
+              0.1700,
+              0.7000
+            ],
+            [
+              0.1532,
+              0.0475
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": true
+        }
+      },
+      "config": {
+        "archetype": "huelightstrip",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:03:ce:2c:d3-0b",
+      "swversion": "1.50.2_r30933",
+      "swconfigid": "59F2C3A3",
+      "productid": "Philips-LST002-1-LedStripsv3"
+    },
+    "13": {
+      "state": {
+        "on": true,
+        "bri": 254,
+        "hue": 21050,
+        "sat": 254,
+        "effect": "none",
+        "xy": [
+          0.2627,
+          0.6304
+        ],
+        "ct": 189,
+        "alert": "select",
+        "colormode": "hs",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2020-03-07T13:46:20"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 12",
+      "modelid": "LCT015",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 1000,
+          "maxlumen": 806,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [
+              0.6915,
+              0.3083
+            ],
+            [
+              0.1700,
+              0.7000
+            ],
+            [
+              0.1532,
+              0.0475
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": true,
+          "proxy": true
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional",
+        "startup": {
+          "mode": "safety",
+          "configured": true
+        }
+      },
+      "uniqueid": "00:17:88:01:03:54:36:28-0b",
+      "swversion": "1.50.2_r30933",
+      "swconfigid": "772B0E5E",
+      "productid": "Philips-LCT015-1-A19ECLv5"
+    },
+    "14": {
+      "state": {
+        "on": true,
+        "bri": 202,
+        "hue": 54222,
+        "sat": 254,
+        "effect": "none",
+        "xy": [
+          0.3817,
+          0.3579
+        ],
+        "ct": 223,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": false
+      },
+      "swupdate": {
+        "state": "transferring",
+        "lastinstall": "2020-07-24T19:29:34"
+      },
+      "type": "Extended color light",
+      "name": "Hue color lamp 13",
+      "modelid": "LCT001",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 600,
+          "colorgamuttype": "other",
+          "colorgamut": [
+            [
+              0.0000,
+              0.0000
+            ],
+            [
+              0.0000,
+              0.0000
+            ],
+            [
+              0.0000,
+              0.0000
+            ]
+          ],
+          "ct": {
+            "min": 153,
+            "max": 500
+          }
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "sultanbulb",
+        "function": "mixed",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:00:fc:9a:a0-0b",
+      "swversion": "5.23.1.13452"
+    }
+  },
+  "groups": {
+    "1": {
+      "name": "Hubben",
+      "lights": [
+        "14",
+        "11",
+        "2",
+        "7",
+        "10",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8",
+        "9",
+        "13",
+        "12"
+      ],
+      "sensors": [],
+      "type": "Room",
+      "state": {
+        "all_on": true,
+        "any_on": true
+      },
+      "recycle": false,
+      "class": "Other",
+      "action": {
+        "on": true,
+        "bri": 170,
+        "hue": 54222,
+        "sat": 254,
+        "effect": "none",
+        "xy": [
+          0.4039,
+          0.3447
+        ],
+        "ct": 419,
+        "alert": "select",
+        "colormode": "xy"
+      }
+    },
+    "2": {
+      "name": "HubbenCeiling",
+      "lights": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8",
+        "9",
+        "12"
+      ],
+      "sensors": [],
+      "type": "LightGroup",
+      "state": {
+        "all_on": true,
+        "any_on": true
+      },
+      "recycle": false,
+      "action": {
+        "on": true,
+        "bri": 170,
+        "hue": 54222,
+        "sat": 254,
+        "effect": "none",
+        "xy": [
+          0.4039,
+          0.3447
+        ],
+        "ct": 419,
+        "alert": "select",
+        "colormode": "xy"
+      }
+    }
+  },
+  "config": {
+    "name": "hueIT",
+    "zigbeechannel": 25,
+    "bridgeid": "001788FFFEAE66E2",
+    "mac": "00:17:88:ae:66:e2",
+    "dhcp": true,
+    "ipaddress": "10.0.0.234",
+    "netmask": "255.255.255.0",
+    "gateway": "10.0.0.1",
+    "proxyaddress": "none",
+    "proxyport": 0,
+    "UTC": "2021-02-03T20:33:29",
+    "localtime": "2021-02-03T21:33:29",
+    "timezone": "Europe/Stockholm",
+    "modelid": "BSB002",
+    "datastoreversion": "99",
+    "swversion": "1942135050",
+    "apiversion": "1.42.0",
+    "swupdate": {
+      "updatestate": 1,
+      "checkforupdate": false,
+      "devicetypes": {
+        "bridge": false,
+        "lights": [],
+        "sensors": []
+      },
+      "url": "",
+      "text": "",
+      "notify": true
+    },
+    "swupdate2": {
+      "checkforupdate": false,
+      "lastchange": "2021-02-03T13:44:28",
+      "bridge": {
+        "state": "noupdates",
+        "lastinstall": "2021-01-12T13:44:41"
+      },
+      "state": "transferring",
+      "autoinstall": {
+        "updatetime": "T14:00:00",
+        "on": true
+      }
+    },
+    "linkbutton": false,
+    "portalservices": true,
+    "portalconnection": "connected",
+    "portalstate": {
+      "signedon": true,
+      "incoming": false,
+      "outgoing": true,
+      "communication": "disconnected"
+    },
+    "internetservices": {
+      "internet": "connected",
+      "remoteaccess": "connected",
+      "time": "connected",
+      "swupdate": "connected"
+    },
+    "factorynew": false,
+    "replacesbridgeid": null,
+    "backup": {
+      "status": "idle",
+      "errorcode": 0
+    },
+    "starterkitid": "",
+    "whitelist": {
+      "3b8fdaf0-4c23-4617-8912-9ad68a2f3be3": {
+        "last use date": "2019-10-19T18:16:43",
+        "create date": "2019-03-27T19:01:03",
+        "name": "Hue 3#Google Pixel XL"
+      },
+      "b62badce-2e1f-4f1d-86da-d8323d97ffb2": {
+        "last use date": "2019-10-11T17:56:58",
+        "create date": "2019-03-27T21:31:10",
+        "name": "HueProApp#Pixel XL"
+      },
+      "c6f60eb4-cacb-44dd-b94d-f0d1ca3821a0": {
+        "last use date": "2019-12-09T17:12:25",
+        "create date": "2019-04-16T16:12:35",
+        "name": "Hue 3#Google Pixel"
+      },
+      "db78f32b-880f-46d7-9c32-04746305a588": {
+        "last use date": "2021-01-13T19:31:26",
+        "create date": "2019-04-18T16:10:24",
+        "name": "Hue 3#OnePlus ONEPLUS A60"
+      },
+      "7d7a156a-69a5-47cb-8878-ee53cb41ddbd": {
+        "last use date": "2019-05-24T22:25:33",
+        "create date": "2019-04-19T17:39:02",
+        "name": "Hue 3#Google Pixel"
+      },
+      "335dc3ee-abe7-4f49-b73a-cca31d546429": {
+        "last use date": "2020-10-16T22:35:35",
+        "create date": "2019-05-10T15:25:18",
+        "name": "Hue 3#Jacobs Iphone"
+      },
+      "d0726b0e-3e94-4bae-94da-c187ba4fe0ac": {
+        "last use date": "2019-12-07T11:23:56",
+        "create date": "2019-05-23T15:14:34",
+        "name": "Hue 3#HUAWEI CLT-L29"
+      },
+      "RMxkpiIVgpJVO7OakA5YYjuDFcVBBhrBbZVJgL4F": {
+        "last use date": "2021-02-03T20:33:29",
+        "create date": "2019-06-14T12:43:53",
+        "name": "Testing#Latte"
+      },
+      "beafac72-b1c3-4394-bb3c-b77f8195404f": {
+        "last use date": "2019-08-18T16:01:25",
+        "create date": "2019-07-06T20:50:02",
+        "name": "Hue 3#OnePlus ONEPLUS A60"
+      },
+      "bbc73a50-e9aa-4949-ab47-e8d62740bb30": {
+        "last use date": "2019-08-23T19:14:40",
+        "create date": "2019-08-23T19:14:40",
+        "name": "Hue Bridge v1#HUAWEI EML-L29"
+      },
+      "8439db9e-6a0a-4481-b04c-098fa25867b7": {
+        "last use date": "2019-08-23T22:38:26",
+        "create date": "2019-08-23T19:15:12",
+        "name": "Hue 3#HUAWEI EML-L29"
+      },
+      "14bf42fc-4b6e-40ee-a98a-63071b83e3c0": {
+        "last use date": "2020-01-30T17:50:18",
+        "create date": "2019-08-31T17:01:56",
+        "name": "Hue 3#Samsung SM-G930F"
+      },
+      "1f643c52-0187-4f4e-a1b3-ee34be4fe91f": {
+        "last use date": "2019-09-19T18:09:04",
+        "create date": "2019-09-10T17:37:07",
+        "name": "Hue 3#Asus ASUS_I01WD"
+      },
+      "2d9eb136-9e08-4de1-9694-42640297bee1": {
+        "last use date": "2021-01-14T08:32:21",
+        "create date": "2020-05-15T17:23:56",
+        "name": "Hue 3#OnePlus HD1903"
+      },
+      "eaaba57c-9d35-408f-9e20-9b73915d686a": {
+        "last use date": "2020-07-24T20:16:13",
+        "create date": "2020-07-24T18:57:27",
+        "name": "Hue 3#OnePlus GM1903"
+      }
+    }
+  },
+  "schedules": {},
+  "scenes": {
+    "hCkSsB67ESLjllC": {
+      "name": "Carbis",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "owner": "eaaba57c-9d35-408f-9e20-9b73915d686a",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "Z1wPN_r01"
+      },
+      "picture": "",
+      "lastupdated": "2020-07-24T19:30:25",
+      "version": 2
+    },
+    "yPjJU1LpVCZMC1l": {
+      "name": "turkos",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "owner": "2d9eb136-9e08-4de1-9694-42640297bee1",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "O9FzZ_r01"
+      },
+      "picture": "",
+      "lastupdated": "2020-10-17T15:21:06",
+      "version": 2
+    },
+    "pVzFVzQzGLHJBhE": {
+      "name": "Scene previous ",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "owner": "14bf42fc-4b6e-40ee-a98a-63071b83e3c0",
+      "recycle": true,
+      "locked": true,
+      "appdata": {},
+      "picture": "",
+      "lastupdated": "2019-09-14T18:32:45",
+      "version": 2
+    },
+    "WhI0PJ2dNG3vJVe": {
+      "name": "Scene 1",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "owner": "eaaba57c-9d35-408f-9e20-9b73915d686a",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "6QFId_r01"
+      },
+      "picture": "",
+      "lastupdated": "2020-07-24T19:30:25",
+      "version": 2
+    },
+    "7eql-SrF02IQfAO": {
+      "name": "Scen 1",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "owner": "eaaba57c-9d35-408f-9e20-9b73915d686a",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "dxeml_r01"
+      },
+      "picture": "",
+      "lastupdated": "2020-07-24T19:30:25",
+      "version": 2
+    },
+    "XSvJceQN8H4R1uA": {
+      "name": "💔🙉",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "owner": "2d9eb136-9e08-4de1-9694-42640297bee1",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "XeRgp_r01"
+      },
+      "picture": "",
+      "lastupdated": "2020-09-28T17:37:50",
+      "version": 2
+    },
+    "QzE2qcuX2ly6ufr": {
+      "name": "Frankrike",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "owner": "2d9eb136-9e08-4de1-9694-42640297bee1",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "Dp3cX_r01"
+      },
+      "picture": "",
+      "lastupdated": "2020-10-15T19:26:36",
+      "version": 2
+    },
+    "PGGdtfchnULYdSs": {
+      "name": "ful jävla färg",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "owner": "db78f32b-880f-46d7-9c32-04746305a588",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "4tsDO_r01"
+      },
+      "picture": "",
+      "lastupdated": "2021-01-13T19:31:23",
+      "version": 2
+    }
+  },
+  "rules": {
+    "1": {
+      "name": "9:",
+      "owner": "14bf42fc-4b6e-40ee-a98a-63071b83e3c0",
+      "created": "2019-09-14T18:32:33",
+      "lasttriggered": "none",
+      "timestriggered": 0,
+      "status": "enabled",
+      "recycle": true,
+      "conditions": [
+        {
+          "address": "/sensors/3/state/status",
+          "operator": "eq",
+          "value": "1"
+        },
+        {
+          "address": "/sensors/3/state/status",
+          "operator": "dx"
+        }
+      ],
+      "actions": [
+        {
+          "address": "/scenes/pVzFVzQzGLHJBhE",
+          "method": "PUT",
+          "body": {
+            "storelightstate": true
+          }
+        },
+        {
+          "address": "/schedules/1",
+          "method": "PUT",
+          "body": {
+            "status": "enabled"
+          }
+        }
+      ]
+    },
+    "2": {
+      "name": "10:",
+      "owner": "14bf42fc-4b6e-40ee-a98a-63071b83e3c0",
+      "created": "2019-09-14T18:32:33",
+      "lasttriggered": "none",
+      "timestriggered": 0,
+      "status": "enabled",
+      "recycle": true,
+      "conditions": [
+        {
+          "address": "/sensors/3/state/status",
+          "operator": "eq",
+          "value": "1"
+        },
+        {
+          "address": "/sensors/3/state/lastupdated",
+          "operator": "dx"
+        }
+      ],
+      "actions": [
+        {
+          "address": "/groups/1/action",
+          "method": "PUT",
+          "body": {
+            "on": true,
+            "transitiontime": 10,
+            "hue_inc": 4369,
+            "sat": 254
+          }
+        }
+      ]
+    },
+    "3": {
+      "name": "13:",
+      "owner": "14bf42fc-4b6e-40ee-a98a-63071b83e3c0",
+      "created": "2019-09-14T18:32:33",
+      "lasttriggered": "none",
+      "timestriggered": 0,
+      "status": "enabled",
+      "recycle": true,
+      "conditions": [
+        {
+          "address": "/groups/1/state/any_on",
+          "operator": "eq",
+          "value": "true"
+        },
+        {
+          "address": "/groups/1/state/any_on",
+          "operator": "dx"
+        },
+        {
+          "address": "/sensors/3/state/status",
+          "operator": "gt",
+          "value": "0"
+        }
+      ],
+      "actions": [
+        {
+          "address": "/schedules/1",
+          "method": "PUT",
+          "body": {
+            "status": "enabled"
+          }
+        }
+      ]
+    },
+    "4": {
+      "name": "13:",
+      "owner": "14bf42fc-4b6e-40ee-a98a-63071b83e3c0",
+      "created": "2019-09-14T18:32:33",
+      "lasttriggered": "none",
+      "timestriggered": 0,
+      "status": "enabled",
+      "recycle": true,
+      "conditions": [
+        {
+          "address": "/sensors/3/state/status",
+          "operator": "lt",
+          "value": "1"
+        },
+        {
+          "address": "/sensors/3/state/status",
+          "operator": "dx"
+        }
+      ],
+      "actions": [
+        {
+          "address": "/schedules/1",
+          "method": "PUT",
+          "body": {
+            "status": "disabled"
+          }
+        },
+        {
+          "address": "/groups/1/action",
+          "method": "PUT",
+          "body": {
+            "scene": "pVzFVzQzGLHJBhE"
+          }
+        }
+      ]
+    },
+    "5": {
+      "name": "13:",
+      "owner": "14bf42fc-4b6e-40ee-a98a-63071b83e3c0",
+      "created": "2019-09-14T18:32:33",
+      "lasttriggered": "none",
+      "timestriggered": 0,
+      "status": "enabled",
+      "recycle": true,
+      "conditions": [
+        {
+          "address": "/groups/1/state/any_on",
+          "operator": "eq",
+          "value": "false"
+        },
+        {
+          "address": "/groups/1/state/any_on",
+          "operator": "dx"
+        }
+      ],
+      "actions": [
+        {
+          "address": "/schedules/1",
+          "method": "PUT",
+          "body": {
+            "status": "disabled"
+          }
+        }
+      ]
+    }
+  },
+  "sensors": {
+    "1": {
+      "state": {
+        "daylight": null,
+        "lastupdated": "none"
+      },
+      "config": {
+        "on": true,
+        "configured": false,
+        "sunriseoffset": 30,
+        "sunsetoffset": -30
+      },
+      "name": "Daylight",
+      "type": "Daylight",
+      "modelid": "PHDL00",
+      "manufacturername": "Signify Netherlands B.V.",
+      "swversion": "1.0"
+    },
+    "3": {
+      "state": {
+        "status": 1,
+        "lastupdated": "2019-09-19T18:08:30"
+      },
+      "config": {
+        "on": true,
+        "reachable": true
+      },
+      "name": "Virtual Button",
+      "type": "CLIPGenericStatus",
+      "modelid": "HUELABSVTOGGLE",
+      "manufacturername": "Philips",
+      "swversion": "2.0",
+      "uniqueid": "2:4:7062-ebb1-43ad-a2cf",
+      "recycle": true
+    }
+  },
+  "resourcelinks": {
+    "39395": {
+      "name": "Hue colorloop",
+      "description": "lyx2Oa3txkU6k6symwuMxQ:0:/EA48N5G+GGItlpdcduJwBLXoR4",
+      "type": "Link",
+      "classid": 2,
+      "owner": "14bf42fc-4b6e-40ee-a98a-63071b83e3c0",
+      "recycle": true,
+      "links": [
+        "/rules/5",
+        "/rules/4",
+        "/rules/3",
+        "/rules/2",
+        "/groups/1",
+        "/rules/1",
+        "/scenes/pVzFVzQzGLHJBhE",
+        "/sensors/3"
+      ]
+    },
+    "27292": {
+      "name": "HueLabs 2.0",
+      "description": "All installed formulas",
+      "type": "Link",
+      "classid": 1,
+      "owner": "14bf42fc-4b6e-40ee-a98a-63071b83e3c0",
+      "recycle": false,
+      "links": [
+        "/resourcelinks/39395"
+      ]
+    }
+  }
+}
