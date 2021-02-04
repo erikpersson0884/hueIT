@@ -3,9 +3,9 @@ package utilities
 import "math"
 
 type RGB struct {
-	R uint8
-	G uint8
-	B uint8
+	R uint8 `json:"r"`
+	G uint8 `json:"g"`
+	B uint8 `json:"b"`
 }
 
 type

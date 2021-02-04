@@ -26,7 +26,7 @@ func (secrets *HueSecrets) GetLightFromMap(id uint16) (Light, error) {
 type Light struct {
 	Id uint16 `json:"id"`
 	X uint `json:"x"`
-	Y uint `json:"Y"`
+	Y uint `json:"y"`
 }
 
 func LoadSecrets() (*HueSecrets, error) {

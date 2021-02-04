@@ -1,7 +1,8 @@
 import './App.css';
 import { ChromePicker } from 'react-color';
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Light} from "./Light";
+import {getLights} from "./api/get.Lights.api";
 
 const defaultLights = [
   {
@@ -56,8 +57,31 @@ const defaultLights = [
 
 function App() {
   const [color, setColor] = useState("#ffffff");
+  const [lights, setLights] = useState([])
 
-  const [lights, setLights] = useState(defaultLights)
+  useEffect(() => {
+    getLights()
+    .then(response => {
+      console.log(response)
+      setLights(response.data.lights.map(obj => {
+        const l = obj.light
+        const s = obj.state
+        return {
+          id: l.id,
+          x: l.x,
+          y: l.y,
+          color: {
+            r: s.r,
+            g: s.g,
+            b: s.b
+          }
+        }
+      }))
+    })
+    .catch(error => {
+      console.error("Failed to retrieve lights, error: ", error)
+    })
+  }, [])
 
   return (
     <div className="App">
