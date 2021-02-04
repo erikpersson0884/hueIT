@@ -88,20 +88,20 @@ function App() {
       <div className="Row">
         <div>
           <ChromePicker color={color} onChangeComplete={color => setColor(color.hex)} width="400px" />
-          <button onClick={() => setLights(updateAllLights(lights, color))}>
+          <button className="SetAllButton" onClick={() => setLights(updateAllLights(lights, color))}>
             SET ALL
           </button>
         </div>
         <div className="Fixed">
           { lights.map((light, index) => (
-            <div className="LightContainer" style={{
+            <button className="LightContainer" style={{
               left: light.x * 100 + "px",
               top: light.y * 100 + "px",
             }} key={index} onClick={() => {
               setLights(updateLight(light.id, lights, color))
             }}>
               <Light color={light.color}/>
-            </div>
+            </button>
           ))}
         </div>
       </div>
