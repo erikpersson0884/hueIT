@@ -19,7 +19,7 @@ func main() {
 
 	go philipsHue.Wave(sec, 120)
 	//err = philipsHue.Disco(sec)
-	//err = philipsHue.ChunkyDisco(sec)
+	//go philipsHue.ChunkyDisco(sec)
 	//err = philipsHue.Neutral(sec)
 
 	router := gin.Default()
@@ -44,7 +44,7 @@ func getLamps(c *gin.Context) {
 	lampInfos, err := philipsHue.GetLightsInfo(secrets)
 	if err != nil {
 		log.Printf("Failed to retrieve lights information due to err: %s\n", err)
-		c.JSON(500, ErrorResponse{
+		c.JSON(http.StatusInternalServerError, ErrorResponse{
 			Message: "Failed to retrieve lights information",
 		})
 	}
@@ -56,14 +56,16 @@ func getLamps(c *gin.Context) {
 }
 
 func setLamps(c *gin.Context) {
-	c.JSON(http.StatusInternalServerError, gin.H{
+	log.Printf("Received data: %+v\n", c.JSON)
+	c.JSON(http.StatusOK, gin.H{
 		"status": http.StatusInternalServerError,
 		"error":  "Not implemented",
 	})
 }
 
 func setLamp(c *gin.Context) {
-	c.JSON(http.StatusInternalServerError, gin.H{
+	log.Printf("Received data: %+v\n", c.JSON)
+	c.JSON(http.StatusOK, gin.H{
 		"status": http.StatusInternalServerError,
 		"error":  "Not implemented",
 	})

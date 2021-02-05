@@ -1,5 +1,5 @@
 import './App.css';
-import { ChromePicker } from 'react-color';
+import ColorPicker, {useColor} from "react-color-palette";
 import React, {useEffect, useState} from "react";
 import {Light} from "./Light";
 import {getLights} from "./api/get.Lights.api";
@@ -56,13 +56,14 @@ const defaultLights = [
 ]
 
 function App() {
-  const [color, setColor] = useState("#ffffff");
-  const [lights, setLights] = useState([])
+  const [color, setColor] = useColor("hex", "#ffffff")
+  const [lights, setLights] = useState(defaultLights)
+  const [error, setError] = useState(undefined)
 
   useEffect(() => {
     getLights()
     .then(response => {
-      console.log(response)
+      console.log("RESPONSE: ", response);
       setLights(response.data.lights.map(obj => {
         const l = obj.light
         const s = obj.state
@@ -71,15 +72,18 @@ function App() {
           x: l.x,
           y: l.y,
           color: {
-            r: s.r,
-            g: s.g,
-            b: s.b
+            hsb: {
+              h: s.h,
+              s: s.s,
+              b: s.b
+            }
           }
         }
       }))
     })
     .catch(error => {
       console.error("Failed to retrieve lights, error: ", error)
+      setError("Something went wrong :(")
     })
   }, [])
 
@@ -87,11 +91,18 @@ function App() {
     <div className="App">
       <div className="Row">
         <div>
-          <ChromePicker color={color} onChangeComplete={color => setColor(color.hex)} width="400px" />
+          <ColorPicker width={400} height={400} color={color} onChange={setColor}/>
           <button className="SetAllButton" onClick={() => setLights(updateAllLights(lights, color))}>
             SET ALL
           </button>
         </div>
+        { error ? (
+        <div className="ErrorContainerContainer">
+          <div className="ErrorContainer">
+            <p className="ErrorText">{error}</p>
+          </div>
+        </div>
+        ) : (
         <div className="Fixed">
           { lights.map((light, index) => (
             <button className="LightContainer" style={{
@@ -104,6 +115,7 @@ function App() {
             </button>
           ))}
         </div>
+        )}
       </div>
     </div>
   );

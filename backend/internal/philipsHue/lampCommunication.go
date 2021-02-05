@@ -53,7 +53,7 @@ type LampDataJson struct {
 
 type LampWithCoordinates struct {
 	Light utilities.Light `json:"light"`
-	State utilities.LampDataRGB `json:"state"`
+	State utilities.SimpleLampData `json:"state"`
 }
 
 
@@ -86,7 +86,7 @@ func GetLightsInfo(secrets *utilities.HueSecrets) ([]LampWithCoordinates, error)
 		if err == nil {
 			lampDatas = append(lampDatas, LampWithCoordinates{
 				Light: light,
-				State: val.State.ToRGB(),
+				State: val.State.Simplify(),
 			})
 		}
 	}
