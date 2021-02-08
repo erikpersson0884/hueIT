@@ -11,13 +11,22 @@ import (
 )
 
 func SetLampCall(values *utilities.LampData, secrets *utilities.HueSecrets, lampNumber uint16) error {
+	url := fmt.Sprintf("%s/lights/%d/state", secrets.BaseUrl, lampNumber)
+	return updateLights(secrets, values, url)
+}
+
+func SetAllLampsCall(values *utilities.LampData, secrets *utilities.HueSecrets) error {
+	url := fmt.Sprintf("%s/groups/1/action", secrets.BaseUrl)
+	return updateLights(secrets, values, url)
+}
+
+func updateLights(secrets *utilities.HueSecrets, values *utilities.LampData, url string) error {
 	client := &http.Client{}
 	jsonData, err := json.Marshal(values)
 
 	if err != nil {
 		return err
 	}
-	url := fmt.Sprintf("%s/lights/%d/state", secrets.BaseUrl, lampNumber)
 	req, err := http.NewRequest(http.MethodPut, url, bytes.NewBuffer(jsonData))
 
 	if err != nil {
@@ -55,7 +64,6 @@ type LampWithCoordinates struct {
 	Light utilities.Light `json:"light"`
 	State utilities.SimpleLampData `json:"state"`
 }
-
 
 func GetLightsInfo(secrets *utilities.HueSecrets) ([]LampWithCoordinates, error) {
 	res, err := http.Get(secrets.BaseUrl)

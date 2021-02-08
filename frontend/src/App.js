@@ -5,6 +5,8 @@ import {Light} from "./Light";
 import {getLights} from "./api/get.Lights.api";
 import {toHslString} from "./utility";
 import {BrightnessBar} from "./BrightnessBar";
+import {setLight} from "./api/post.Light.api";
+import {setAllLights} from "./api/post.AllLights.api";
 
 const defaultLights = [
   {
@@ -65,7 +67,6 @@ function App() {
   useEffect(() => {
     getLights()
     .then(response => {
-      console.log("RESPONSE: ", response);
       setLights(response.data.lights.map(obj => {
         const l = obj.light
         const s = obj.state
@@ -97,8 +98,7 @@ function App() {
           {color.hsb && (
             <BrightnessBar width={400-32} color={color} onChange={setColor}/>
           )}
-          {/*<div className="BrightnessBar" style={{backgroundImage: zeroToMaxBrightness(color.hsb)}}/>*/}
-          <button className="SetAllButton" onClick={() => setLights(updateAllLights(lights, color))}>
+          <button className="SetAllButton" onClick={() => setLights(updateAllLights(lights, color, setError))}>
             SET ALL
           </button>
         </div>
@@ -115,7 +115,7 @@ function App() {
               left: light.x * 100 + "px",
               top: light.y * 100 + "px",
             }} key={index} onClick={() => {
-              setLights(updateLight(light.id, lights, color))
+              setLights(updateLight(light.id, lights, color, setError))
             }}>
               <Light color={light.color}/>
             </button>
@@ -127,8 +127,12 @@ function App() {
   );
 }
 
-function updateAllLights(lights, color) {
-  console.log("UPDATING ALL LIGHTS TO COLOR", color)
+function updateAllLights(lights, color, setError) {
+  setAllLights(color.hsb)
+  .catch(error => {
+    console.log("failed to set all lights due to error: ", error)
+    setError("Failed to set lights, please reload the page and try again")
+  })
   return lights.map(light => {
     return {
       ...light,
@@ -137,8 +141,13 @@ function updateAllLights(lights, color) {
   })
 }
 
-function updateLight(id, lights, color) {
-  console.log("UPDATING LIGHT ", id ," TO COLOR", color)
+function updateLight(id, lights, color, setError) {
+  setLight(id, color.hsb)
+  .catch(error => {
+    console.log("failed to set light due to error: ", error)
+    setError("Failed to set light, please reload the page and try again.")
+  })
+
   return lights.map(light => {
     if (light.id === id) {
       return {

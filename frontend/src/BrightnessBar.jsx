@@ -50,7 +50,7 @@ export const BrightnessBar = props => {
     };
 
     return (
-    <div ref={brightnessRef} className="BrightnessBar" onMouseDown={onMouseDown} style={{backgroundImage: maxToZeroBrightness(color.hsb)}}>
+    <div ref={brightnessRef} className="BrightnessBar" onMouseDown={onMouseDown} style={{backgroundImage: brightnessColors(color.hsb)}}>
         <div className="BrightnessBarCursor" style={{ left: position, backgroundColor: toHslString(color.hsb) }} />
     </div>
     );
@@ -79,26 +79,18 @@ export function getBrightnessByCoordinates(x, width) {
 }
 
 
-function maxToZeroBrightness(hsb) {
+function brightnessColors(hsb) {
     const zero = {
         h: hsb.h,
         s: hsb.s,
         b: 0
     }
 
-    const normal = {
+    const color = {
         h: hsb.h,
         s: hsb.s,
         b: 50
     }
 
-    const max = {
-        h: hsb.h,
-        s: hsb.s,
-        b: 100
-    }
-
-    const a = `linear-gradient( to left, ${toHslString(max)}, ${toHslString(normal)}, ${toHslString(zero)})`
-    console.log("A? ", a)
-    return a
+    return `linear-gradient( to left, ${toHslString(color)}, ${toHslString(zero)})`
 }
