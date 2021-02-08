@@ -89,3 +89,25 @@ button:focus {
   display: flex;
   flex-direction: row;
 }
+
+.BrightnessBar {
+  width: 380px;
+  margin-left: 10px;
+  height: 12px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.BrightnessBarCursor {
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 0.5px;
+  box-sizing: border-box;
+
+  transform: translate(-8px, -2px);
+}

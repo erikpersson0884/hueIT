@@ -3,6 +3,8 @@ import ColorPicker, {useColor} from "react-color-palette";
 import React, {useEffect, useState} from "react";
 import {Light} from "./Light";
 import {getLights} from "./api/get.Lights.api";
+import {toHslString} from "./utility";
+import {BrightnessBar} from "./BrightnessBar";
 
 const defaultLights = [
   {
@@ -92,6 +94,10 @@ function App() {
       <div className="Row">
         <div>
           <ColorPicker width={400} height={400} color={color} onChange={setColor}/>
+          {color.hsb && (
+            <BrightnessBar width={400-32} color={color} onChange={setColor}/>
+          )}
+          {/*<div className="BrightnessBar" style={{backgroundImage: zeroToMaxBrightness(color.hsb)}}/>*/}
           <button className="SetAllButton" onClick={() => setLights(updateAllLights(lights, color))}>
             SET ALL
           </button>

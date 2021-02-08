@@ -1,5 +1,6 @@
 import "./App.css"
 import React from "react"
+import {toHslString} from "./utility";
 
 export const Light = props => {
     let hsb = {
@@ -13,7 +14,7 @@ export const Light = props => {
 
     return (
         <div className="Light" style={{
-            backgroundColor: `hsl(${hsb.h}, ${hsb.s}%, ${hsb.b}%`
+            backgroundColor: toHslString(hsb)
         }}/>
     )
 }
