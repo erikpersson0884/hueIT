@@ -38,14 +38,14 @@ func LoadSecrets() (*HueSecrets, error) {
 	} else {
 		log.Println("Loaded environment variables from .env file")
 	}
-
+	
 	jsonFile, err := os.Open("config.json")
 	if err != nil {
 		return nil, err
 	}
 
 	secrets := HueSecrets{
-		BaseUrl: os.Getenv("hue_base_url"),
+		BaseUrl: os.Getenv("HUE_BASE_URL"),
 	}
 
 	byteValue, _ := ioutil.ReadAll(jsonFile)
