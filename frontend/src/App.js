@@ -7,6 +7,7 @@ import {toHslString} from "./utility";
 import {BrightnessBar} from "./BrightnessBar";
 import {setLight} from "./api/post.Light.api";
 import {setAllLights} from "./api/post.AllLights.api";
+import {SaturationBar} from "./SaturationBar";
 
 const defaultLights = [
   {
@@ -96,7 +97,10 @@ function App() {
         <div>
           <ColorPicker width={400} height={400} color={color} onChange={setColor}/>
           {color.hsb && (
+          <div className="BarsContainer">
             <BrightnessBar width={400-32} color={color} onChange={setColor}/>
+            <SaturationBar width={400-32} color={color} onChange={setColor}/>
+          </div>
           )}
           <button className="SetAllButton" onClick={() => setLights(updateAllLights(lights, color, setError))}>
             SET ALL

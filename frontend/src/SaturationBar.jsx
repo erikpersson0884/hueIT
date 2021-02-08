@@ -3,12 +3,12 @@ import {toHsbString, toHslString, toRgbString} from "./utility";
 import {toColor} from "react-color-palette";
 
 // Code copied / modified from https://github.com/Wondermarin/react-color-palette/
-export const BrightnessBar = props => {
+export const SaturationBar = props => {
     const {width, color, onChange} = props
-    const brightnessRef = useRef(null);
+    const saturationRef = useRef(null);
     const position = useMemo(() => {
-        return getCoordinatesByBrightness(color.hsb.b, width);
-    }, [color.hsb.b, width]);
+        return getCoordinatesBySaturation(color.hsb.s, width);
+    }, [color.hsb.s, width]);
 
     const moveCursor = (x, shiftX) => {
         const [newX] = moveAt({
@@ -18,16 +18,16 @@ export const BrightnessBar = props => {
                                   max: width
                               });
 
-        const newB = getBrightnessByCoordinates(newX, width);
+        const newS = getSaturationByCoordinates(newX, width);
 
-        onChange(toColor("hsb", {...color.hsb, b: newB}));
+        onChange(toColor("hsb", {...color.hsb, s: newS}));
     };
 
     const onMouseDown = (e) => {
-        if (brightnessRef.current) {
+        if (saturationRef.current) {
             if (e.button !== 0) return;
 
-            const { current: hue } = brightnessRef;
+            const { current: hue } = saturationRef;
 
             document.getSelection()?.empty();
 
@@ -50,13 +50,13 @@ export const BrightnessBar = props => {
     };
 
     return (
-    <div ref={brightnessRef} className="BrightnessBar" onMouseDown={onMouseDown} style={{backgroundImage: brightnessColors(color.hsb), width: width + "px"}}>
+    <div ref={saturationRef} className="BrightnessBar" onMouseDown={onMouseDown} style={{backgroundImage: saturationColors(color.hsb), width: width + "px"}}>
         <div className="BrightnessBarCursor" style={{ left: position, backgroundColor: toRgbString(color.rgb) }} />
     </div>
     );
 };
 
-function getCoordinatesByBrightness(h, width) {
+function getCoordinatesBySaturation(h, width) {
     return (h / 100) * width;
 }
 
@@ -74,22 +74,22 @@ function moveAt(x, y) {
     return [newX];
 }
 
-export function getBrightnessByCoordinates(x, width) {
+export function getSaturationByCoordinates(x, width) {
     return (x / width) * 100;
 }
 
 
-function brightnessColors(hsb) {
+function saturationColors(hsb) {
     const zero = {
         h: hsb.h,
-        s: hsb.s,
-        b: 0
+        s: 0,
+        b: hsb.b / 2
     }
 
     const color = {
         h: hsb.h,
-        s: hsb.s,
-        b: 50
+        s: 100,
+        b: hsb.b / 2
     }
 
     return `linear-gradient( to left, ${toHsbString(color)}, ${toHsbString(zero)})`

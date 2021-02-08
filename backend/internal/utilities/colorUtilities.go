@@ -8,8 +8,7 @@ type RGB struct {
 	B uint8 `json:"b"`
 }
 
-type
-RGBf struct {
+type RGBf struct {
 	R float64
 	G float64
 	B float64

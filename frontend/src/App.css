@@ -91,11 +91,10 @@ button:focus {
 }
 
 .BrightnessBar {
-  width: 380px;
-  margin-left: 10px;
   height: 12px;
   border-radius: 6px;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .BrightnessBarCursor {
@@ -110,4 +109,10 @@ button:focus {
   box-sizing: border-box;
 
   transform: translate(-8px, -2px);
+}
+
+.BarsContainer {
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
 }
