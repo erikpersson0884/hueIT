@@ -34,11 +34,11 @@ type Light struct {
 func LoadSecrets() (*HueSecrets, error) {
 	err := godotenv.Load()
 	if err != nil {
-		log.Println("Unable to load .env file")
+		log.Println("Unable to load .env file, using existing environment variables")
 	} else {
 		log.Println("Loaded environment variables from .env file")
 	}
-	
+
 	jsonFile, err := os.Open("config.json")
 	if err != nil {
 		return nil, err
