@@ -4,7 +4,9 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/joho/godotenv"
 	"io/ioutil"
+	"log"
 	"os"
 )
 
@@ -30,12 +32,21 @@ type Light struct {
 }
 
 func LoadSecrets() (*HueSecrets, error) {
-	jsonFile, err := os.Open("secret.json")
+	err := godotenv.Load()
+	if err != nil {
+		log.Println("Unable to load .env file")
+	} else {
+		log.Println("Loaded environment variables from .env file")
+	}
+
+	jsonFile, err := os.Open("config.json")
 	if err != nil {
 		return nil, err
 	}
 
-	var secrets HueSecrets
+	secrets := HueSecrets{
+		BaseUrl: os.Getenv("hue_base_url"),
+	}
 
 	byteValue, _ := ioutil.ReadAll(jsonFile)
 	err = json.Unmarshal(byteValue, &secrets)
