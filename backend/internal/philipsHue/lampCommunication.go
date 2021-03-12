@@ -10,17 +10,17 @@ import (
 	"strconv"
 )
 
-func SetLampCall(values *utilities.LampData, secrets *utilities.HueSecrets, lampNumber uint16) error {
-	url := fmt.Sprintf("%s/lights/%d/state", secrets.BaseUrl, lampNumber)
-	return updateLights(secrets, values, url)
+func SetLampCall(values *utilities.LampData, config *utilities.HueConfig, lampNumber uint16) error {
+	url := fmt.Sprintf("%s/lights/%d/state", config.BaseUrl, lampNumber)
+	return updateLights(config, values, url)
 }
 
-func SetAllLampsCall(values *utilities.LampData, secrets *utilities.HueSecrets) error {
-	url := fmt.Sprintf("%s/groups/1/action", secrets.BaseUrl)
-	return updateLights(secrets, values, url)
+func SetAllLampsCall(values *utilities.LampData, config *utilities.HueConfig) error {
+	url := fmt.Sprintf("%s/groups/1/action", config.BaseUrl)
+	return updateLights(config, values, url)
 }
 
-func updateLights(secrets *utilities.HueSecrets, values *utilities.LampData, url string) error {
+func updateLights(config *utilities.HueConfig, values *utilities.LampData, url string) error {
 	client := &http.Client{}
 	jsonData, err := json.Marshal(values)
 
@@ -65,8 +65,8 @@ type LampWithCoordinates struct {
 	State utilities.SimpleLampData `json:"state"`
 }
 
-func GetLightsInfo(secrets *utilities.HueSecrets) ([]LampWithCoordinates, error) {
-	res, err := http.Get(secrets.BaseUrl)
+func GetLightsInfo(config *utilities.HueConfig) ([]LampWithCoordinates, error) {
+	res, err := http.Get(config.BaseUrl)
 	if err != nil {
 		return nil, err
 	}
@@ -90,7 +90,7 @@ func GetLightsInfo(secrets *utilities.HueSecrets) ([]LampWithCoordinates, error)
 			return nil, err
 		}
 
-		light, err := secrets.GetLightFromMap(uint16(id))
+		light, err := config.GetLightFromMap(uint16(id))
 		if err == nil {
 			lampDatas = append(lampDatas, LampWithCoordinates{
 				Light: light,

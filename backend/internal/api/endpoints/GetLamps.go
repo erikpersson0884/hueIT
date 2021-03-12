@@ -8,7 +8,7 @@ import (
 )
 
 func GetLamps(c *gin.Context) {
-	lampInfos, err := philipsHue.GetLightsInfo(secrets)
+	lampInfos, err := philipsHue.GetLightsInfo(config)
 	if err != nil {
 		log.Printf("Failed to retrieve lights information due to err: %s\n", err)
 		c.JSON(http.StatusInternalServerError, ErrorResponse{

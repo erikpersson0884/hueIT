@@ -9,14 +9,14 @@ import (
 
 const maxUInt16Val uint16 = 65535
 
-func Neutral(secrets *utilities.HueSecrets) {
-	for _, light := range secrets.LightMap {
+func Neutral(config *utilities.HueConfig) {
+	for _, light := range config.LightMap {
 		err := SetLampCall(&utilities.LampData{
 			On:         true,
 			Brightness: 50,
 			Hue:        30000,
 			Saturation: 50,
-		}, secrets, light.Id)
+		}, config, light.Id)
 
 		if err != nil {
 			log.Fatalf("Failed to set light mode due to err %s\n", err)
@@ -24,11 +24,11 @@ func Neutral(secrets *utilities.HueSecrets) {
 	}
 }
 
-func Wave(secrets *utilities.HueSecrets, brightness uint8) {
+func Wave(config *utilities.HueConfig, brightness uint8) {
 	var hue uint16 = 4000
 	for {
 		hue += 2000 % maxUInt16Val
-		for _, light := range secrets.LightMap {
+		for _, light := range config.LightMap {
 			hueData := utilities.LampData{
 				On:         true,
 				Brightness: brightness,
@@ -37,7 +37,7 @@ func Wave(secrets *utilities.HueSecrets, brightness uint8) {
 			}
 
 			//fmt.Println(fmt.Sprintf("Should set utilities for lamp %d", light))
-			err := SetLampCall(&hueData, secrets, light.Id)
+			err := SetLampCall(&hueData, config, light.Id)
 
 			if err != nil {
 				log.Fatalf("Failed to set light mode due to err %s\n", err)
@@ -53,9 +53,9 @@ func randHue() uint16 {
 	return uint16(rand.Int31n(int32(maxUInt16Val)))
 }
 
-func Disco(secrets *utilities.HueSecrets) {
+func Disco(config *utilities.HueConfig) {
 	for {
-		for _, light := range secrets.LightMap {
+		for _, light := range config.LightMap {
 			hueData := utilities.LampData{
 				On:         true,
 				Brightness: 255,
@@ -63,7 +63,7 @@ func Disco(secrets *utilities.HueSecrets) {
 				Saturation: 255,
 			}
 
-			err := SetLampCall(&hueData, secrets, light.Id)
+			err := SetLampCall(&hueData, config, light.Id)
 
 			if err != nil {
 				log.Fatalf("Failed to set light mode due to err %s\n", err)
@@ -75,9 +75,9 @@ func Disco(secrets *utilities.HueSecrets) {
 	}
 }
 
-func ChunkyDisco(secrets *utilities.HueSecrets) {
+func ChunkyDisco(config *utilities.HueConfig) {
 	for {
-		for _, light := range secrets.LightMap {
+		for _, light := range config.LightMap {
 			hueData := utilities.LampData{
 				On:         true,
 				Brightness: 255,
@@ -85,7 +85,7 @@ func ChunkyDisco(secrets *utilities.HueSecrets) {
 				Saturation: 255,
 			}
 
-			err := SetLampCall(&hueData, secrets, light.Id)
+			err := SetLampCall(&hueData, config, light.Id)
 
 			if err != nil {
 				log.Fatalf("Failed to set light mode due to err %s\n", err)

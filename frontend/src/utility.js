@@ -27,3 +27,30 @@ export function toHsbString(hsb) {
 export function toRgbString(rgb) {
     return `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`
 }
+
+let setLoginUrl = _ => {console.log("Error?")}
+
+export function initializeSetLoginUrl(setLoginUrlFunc) {
+    setLoginUrl = setLoginUrlFunc
+}
+
+export async function AuthorizedApiCall(call) {
+    return call()
+    .then(response => {
+        return {
+            error: false,
+            response: response
+        }
+    })
+    .catch(error => {
+        const headers = error.response.headers;
+        if (error.response.status === 401 && headers.location) {
+            setLoginUrl(headers.location)
+        }
+
+        return {
+            error: true,
+            errResponse: error
+        }
+    })
+}

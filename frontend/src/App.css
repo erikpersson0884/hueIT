@@ -116,3 +116,39 @@ button:focus {
   padding-right: 16px;
   width: 100%;
 }
+
+.BackButton {
+  padding: 15px;
+  border: 1px solid #555555;
+}
+
+.BackButton:hover {
+  background-color: #AAAAAA;
+  border: 1px solid gray;
+}
+
+.CenterOnPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.ErrorText {
+  color: #FF0000;
+}
+
+.LoginButton {
+  border: 1px solid black;
+  padding: 10px;
+  min-width: 200px;
+  border-radius: 5px;
+}
+
+.LoginButton:hover {
+  border: 1px solid gray;
+  background-color: #AAAAAA;
+}

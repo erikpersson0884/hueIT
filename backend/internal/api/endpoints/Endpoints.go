@@ -2,10 +2,10 @@ package endpoints
 
 import "github.com/viddem/huego/internal/utilities"
 
-var secrets *utilities.HueSecrets
+var config *utilities.HueConfig
 
-func Init(s *utilities.HueSecrets) {
-	secrets = s
+func Init(conf  *utilities.HueConfig) {
+	config = conf
 }
 
 type ErrorResponse struct {

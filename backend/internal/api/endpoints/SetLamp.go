@@ -62,7 +62,7 @@ func SetLamp(c *gin.Context) {
 
 	fmt.Printf("Received lamp data: %+v\n resulting in: %+v\n", receivedLampData, receivedLampData.ToLampData())
 
-	err = philipsHue.SetLampCall(receivedLampData.ToLampData(), secrets, uint16(id))
+	err = philipsHue.SetLampCall(receivedLampData.ToLampData(), config, uint16(id))
 	if err != nil {
 		log.Printf("Error: Failed to set lamp, err: %s\n", err)
 		c.JSON(http.StatusInternalServerError, ErrorResponse{Message: "Failed to set lamp"})

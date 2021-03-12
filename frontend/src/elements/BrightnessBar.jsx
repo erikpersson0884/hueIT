@@ -1,14 +1,14 @@
 import React, {useMemo, useRef} from "react"
-import {toHsbString, toHslString, toRgbString} from "./utility";
+import {toHsbString, toHslString, toRgbString} from "../utility";
 import {toColor} from "react-color-palette";
 
 // Code copied / modified from https://github.com/Wondermarin/react-color-palette/
-export const SaturationBar = props => {
+export const BrightnessBar = props => {
     const {width, color, onChange} = props
-    const saturationRef = useRef(null);
+    const brightnessRef = useRef(null);
     const position = useMemo(() => {
-        return getCoordinatesBySaturation(color.hsb.s, width);
-    }, [color.hsb.s, width]);
+        return getCoordinatesByBrightness(color.hsb.b, width);
+    }, [color.hsb.b, width]);
 
     const moveCursor = (x, shiftX) => {
         const [newX] = moveAt({
@@ -18,16 +18,16 @@ export const SaturationBar = props => {
                                   max: width
                               });
 
-        const newS = getSaturationByCoordinates(newX, width);
+        const newB = getBrightnessByCoordinates(newX, width);
 
-        onChange(toColor("hsb", {...color.hsb, s: newS}));
+        onChange(toColor("hsb", {...color.hsb, b: newB}));
     };
 
     const onMouseDown = (e) => {
-        if (saturationRef.current) {
+        if (brightnessRef.current) {
             if (e.button !== 0) return;
 
-            const { current: hue } = saturationRef;
+            const { current: hue } = brightnessRef;
 
             document.getSelection()?.empty();
 
@@ -50,13 +50,13 @@ export const SaturationBar = props => {
     };
 
     return (
-    <div ref={saturationRef} className="BrightnessBar" onMouseDown={onMouseDown} style={{backgroundImage: saturationColors(color.hsb), width: width + "px"}}>
+    <div ref={brightnessRef} className="BrightnessBar" onMouseDown={onMouseDown} style={{backgroundImage: brightnessColors(color.hsb), width: width + "px"}}>
         <div className="BrightnessBarCursor" style={{ left: position, backgroundColor: toRgbString(color.rgb) }} />
     </div>
     );
 };
 
-function getCoordinatesBySaturation(h, width) {
+function getCoordinatesByBrightness(h, width) {
     return (h / 100) * width;
 }
 
@@ -74,22 +74,22 @@ function moveAt(x, y) {
     return [newX];
 }
 
-export function getSaturationByCoordinates(x, width) {
+export function getBrightnessByCoordinates(x, width) {
     return (x / width) * 100;
 }
 
 
-function saturationColors(hsb) {
+function brightnessColors(hsb) {
     const zero = {
         h: hsb.h,
-        s: 0,
-        b: hsb.b / 2
+        s: hsb.s,
+        b: 0
     }
 
     const color = {
         h: hsb.h,
-        s: 100,
-        b: hsb.b / 2
+        s: hsb.s,
+        b: 50
     }
 
     return `linear-gradient( to left, ${toHsbString(color)}, ${toHsbString(zero)})`

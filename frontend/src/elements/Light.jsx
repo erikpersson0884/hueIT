@@ -1,6 +1,6 @@
-import "./App.css"
+import "../App.css"
 import React from "react"
-import {toHslString} from "./utility";
+import {toHslString} from "../utility";
 
 export const Light = props => {
     let hsb = {
