@@ -16,6 +16,7 @@ button:hover {
   box-shadow: 0px 0px 0px transparent;
   border: 0px solid transparent;
   text-shadow: 0px 0px 0px transparent;
+  cursor: pointer;
 }
 
 button:active {
@@ -37,7 +38,11 @@ button:focus {
 
 .SetAllButton:hover {
   background: rgba(1, 1, 1, 0.1);
-  border: 2px solid black;
+  border: 1px solid black;
+}
+
+.SetAllButton:active {
+  background: rgba(1, 1, 1, 0.15);
 }
 
 .Fixed {
@@ -151,4 +156,14 @@ button:focus {
 .LoginButton:hover {
   border: 1px solid gray;
   background-color: #AAAAAA;
+}
+
+.LightsContainer {
+}
+
+.LightText {
+  margin-left: 20px;
+  font-size: 24px;
+  width: 200px;
+  border: 1px solid black;
 }

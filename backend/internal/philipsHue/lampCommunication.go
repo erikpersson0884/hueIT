@@ -61,7 +61,7 @@ type LampDataJson struct {
 }
 
 type LampWithCoordinates struct {
-	Light utilities.Light `json:"light"`
+	Light utilities.Light          `json:"light"`
 	State utilities.SimpleLampData `json:"state"`
 }
 

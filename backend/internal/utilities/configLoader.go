@@ -14,6 +14,7 @@ type HueConfig struct {
 	BaseUrl               string
 	MapDescription        string  `json:"map_description"`
 	LightMap              []Light `json:"lightsMap"`
+	Extra				  HueExtra  `json:"extra"`
 	GammaAuthorizationUri string
 	GammaRedirectUri      string
 	GammaTokenUri         string
@@ -21,6 +22,11 @@ type HueConfig struct {
 	GammaSecret           string
 	GammaClientId         string
 	Secret 				  string
+}
+
+type HueExtra struct {
+	TopText string `json:"topText"`
+	BottomText string `json:"bottomText"`
 }
 
 func (config *HueConfig) GetLightFromMap(id uint16) (Light, error) {

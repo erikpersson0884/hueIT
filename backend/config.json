@@ -41,5 +41,9 @@
       "x": 1,
       "y": 3
     }
-  ]
+  ],
+  "extra": {
+    "topText": "Bar",
+    "bottomText": "Projector wall"
+  }
 }

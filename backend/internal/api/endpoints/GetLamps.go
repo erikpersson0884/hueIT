@@ -14,10 +14,12 @@ func GetLamps(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, ErrorResponse{
 			Message: "Failed to retrieve lights information",
 		})
+		return
 	}
 
 	c.JSON(http.StatusOK, gin.H{
 		"status": http.StatusOK,
 		"lights": lampInfos,
+		"extra":  config.Extra,
 	})
 }
