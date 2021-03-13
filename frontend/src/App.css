@@ -162,9 +162,9 @@ button:focus {
 }
 
 .LightText {
-  margin-top: 0px;
   margin-left: 20px;
   font-size: 24px;
   width: 200px;
   border: 1px solid black;
+  padding: 5px;
 }

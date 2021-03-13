@@ -8,6 +8,14 @@ import {Light} from "./Light";
 import {setAllLights} from "../api/post.AllLights.api";
 import {setLight} from "../api/post.Light.api";
 
+const DEFAULT_COLOR = {
+    hsb: {
+        h: 0,
+        s: 0,
+        b: 100
+    }
+};
+
 export function Main() {
     const [color, setColor] = useColor("hex", "#ffffff")
     const [lights, setLights] = useState([])
@@ -85,6 +93,10 @@ export function Main() {
                 <button className="SetAllButton"
                         onClick={() => setLights(updateAllLights(lights, color, setError))}>
                     SET ALL
+                </button>
+                <button className="SetAllButton"
+                        onClick={() => setLights(updateAllLights(lights, DEFAULT_COLOR, setError))}>
+                    RESET LIGHTS
                 </button>
             </div>
             {error ? (
