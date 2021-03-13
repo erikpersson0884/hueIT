@@ -169,3 +169,12 @@ button:focus {
   border: 1px solid black;
   padding: 5px;
 }
+
+.LogoutButtonContainer {
+  margin-left: auto;
+}
+
+.LogoutButton {
+  margin-top: 0px;
+  min-width: 100px;
+}

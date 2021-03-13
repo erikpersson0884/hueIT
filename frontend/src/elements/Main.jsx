@@ -7,6 +7,7 @@ import {SaturationBar} from "./SaturationBar";
 import {Light} from "./Light";
 import {setAllLights} from "../api/post.AllLights.api";
 import {setLight} from "../api/post.Light.api";
+import {postGammaLogout} from "../api/post.GammaLogout";
 
 const DEFAULT_COLOR = {
     hsb: {
@@ -137,6 +138,11 @@ export function Main() {
                 }
             </div>
             )}
+            <div className="LogoutButtonContainer">
+                <button className="SetAllButton LogoutButton" onClick={() => logout(setError)}>
+                    Logout
+                </button>
+            </div>
         </div>
     </div>
     );
@@ -183,5 +189,22 @@ function updateLight(id, lights, color, setError) {
             }
         }
         return light
+    })
+}
+
+function logout(setError) {
+    postGammaLogout()
+    .then(response => {
+        const loc = response.headers.location
+        if (loc && loc !== "") {
+            window.location.href = loc
+        } else {
+            console.log("Did not receive a location header!")
+            setError("Something went wrong")
+        }
+    })
+    .catch(error => {
+        console.log("Failed to logout, err: ", error)
+        setError("Something went wrong")
     })
 }

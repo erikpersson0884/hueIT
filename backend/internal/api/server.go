@@ -30,6 +30,7 @@ func Init(conf *utilities.HueConfig) {
 			auth.POST("/lamps/:id", endpoints.SetLamp)
 		}
 		v1.POST("/auth", endpoints.Auth)
+		v1.POST("/logout", endpoints.Logout)
 	}
 
 	err := router.Run()
@@ -43,7 +44,7 @@ func CheckAuth() gin.HandlerFunc {
 		session := sessions.Default(c)
 		token := session.Get("token")
 
-		if token == nil {
+		if token == nil && token != "" {
 			InitializeAuth(c)
 			return
 		}

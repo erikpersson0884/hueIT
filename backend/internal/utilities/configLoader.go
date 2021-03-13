@@ -21,6 +21,7 @@ type HueConfig struct {
 	GammaMeUri            string
 	GammaSecret           string
 	GammaClientId         string
+	GammaLogoutUrl 		  string
 	Secret 				  string
 }
 
@@ -65,6 +66,7 @@ func LoadConfigs() (*HueConfig, error) {
 		GammaMeUri:            loadNonEmptyString("GAMMA_ME_URI"),
 		GammaSecret:           loadNonEmptyString("GAMMA_SECRET"),
 		GammaClientId:         loadNonEmptyString("GAMMA_CLIENT_ID"),
+		GammaLogoutUrl:		   loadNonEmptyString("GAMMA_LOGOUT_URL"),
 		Secret:				   loadNonEmptyString("SECRET"),
 	}
 
