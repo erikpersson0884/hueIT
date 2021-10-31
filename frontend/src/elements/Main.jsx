@@ -36,6 +36,7 @@ export function Main() {
             } else {
                 let bigX = -1
                 let bigY = -1
+
                 setLights(response.response.data.lights.LampWithCoordinates.map(obj => {                    
                     const l = obj.light
                     const s = obj.state
